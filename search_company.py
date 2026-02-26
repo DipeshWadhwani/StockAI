@@ -14,8 +14,8 @@ def search_company(company_name):
             return ticker # gives answer back to the main program
         except (IndexError, KeyError): # if there is an error in accessing the data (like if the company name is not found), we will catch that error and return None.
             return "No Ticker found for the company name provided. Please try with valid name."
-        else:
-            return "Connection Error."
+    else:
+        return "Connection Error."
         
 # Testing Code
 name = input("Enter the company name: ")
